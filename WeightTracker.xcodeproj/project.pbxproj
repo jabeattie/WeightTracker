@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34C8529B79F589ED9E23A98C /* Pods_WeightTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E35D249DE4D947A33205AB0E /* Pods_WeightTracker.framework */; };
+		4A0F999D20F25D51009E9822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F999C20F25D51009E9822 /* AppDelegate.swift */; };
+		4A0F999F20F25D51009E9822 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F999E20F25D51009E9822 /* ViewController.swift */; };
+		4A0F99A220F25D51009E9822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A0F99A020F25D51009E9822 /* Main.storyboard */; };
+		4A0F99A420F25D52009E9822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0F99A320F25D52009E9822 /* Assets.xcassets */; };
+		4A0F99A720F25D52009E9822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A0F99A520F25D52009E9822 /* LaunchScreen.storyboard */; };
+		4A0F99B220F25D52009E9822 /* WeightTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99B120F25D52009E9822 /* WeightTrackerTests.swift */; };
+		4A0F99C020F25D6C009E9822 /* AddWeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0F99BD20F25D6C009E9822 /* AddWeightViewController.xib */; };
+		4A0F99C120F25D6C009E9822 /* AddWeightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99BE20F25D6C009E9822 /* AddWeightViewModel.swift */; };
+		4A0F99C220F25D6C009E9822 /* AddWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99BF20F25D6C009E9822 /* AddWeightViewController.swift */; };
+		4A0F99C520F25D76009E9822 /* BMICalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99C420F25D76009E9822 /* BMICalculator.swift */; };
+		4A0F99D220F25D7B009E9822 /* DailyTargetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99C720F25D7B009E9822 /* DailyTargetCell.swift */; };
+		4A0F99D320F25D7B009E9822 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99C820F25D7B009E9822 /* DashboardViewController.swift */; };
+		4A0F99D420F25D7B009E9822 /* CurrentWeightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99C920F25D7B009E9822 /* CurrentWeightCell.swift */; };
+		4A0F99D520F25D7B009E9822 /* DailyTargetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0F99CA20F25D7B009E9822 /* DailyTargetCell.xib */; };
+		4A0F99D620F25D7B009E9822 /* ProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99CB20F25D7B009E9822 /* ProgressCell.swift */; };
+		4A0F99D720F25D7B009E9822 /* ProgressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0F99CC20F25D7B009E9822 /* ProgressCell.xib */; };
+		4A0F99D820F25D7B009E9822 /* CurrentWeightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0F99CD20F25D7B009E9822 /* CurrentWeightCell.xib */; };
+		4A0F99D920F25D7B009E9822 /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0F99CE20F25D7B009E9822 /* DashboardViewController.xib */; };
+		4A0F99DA20F25D7B009E9822 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99CF20F25D7B009E9822 /* DashboardViewModel.swift */; };
+		4A0F99DB20F25D7B009E9822 /* BMICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99D020F25D7B009E9822 /* BMICell.swift */; };
+		4A0F99DC20F25D7B009E9822 /* BMICell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0F99D120F25D7B009E9822 /* BMICell.xib */; };
+		4A0F99E720F25D81009E9822 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99DE20F25D81009E9822 /* RealmService.swift */; };
+		4A0F99E820F25D81009E9822 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99E020F25D81009E9822 /* NibLoadableView.swift */; };
+		4A0F99E920F25D81009E9822 /* ResizableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99E120F25D81009E9822 /* ResizableViewCell.swift */; };
+		4A0F99EA20F25D81009E9822 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99E220F25D81009E9822 /* ReusableView.swift */; };
+		4A0F99EB20F25D81009E9822 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99E320F25D81009E9822 /* UICollectionView+Extensions.swift */; };
+		4A0F99EC20F25D81009E9822 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99E520F25D81009E9822 /* Weight.swift */; };
+		4A0F99ED20F25D81009E9822 /* Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99E620F25D81009E9822 /* Height.swift */; };
+		4A0F99EF20F25D88009E9822 /* UIColor+WeightTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99EE20F25D87009E9822 /* UIColor+WeightTracker.swift */; };
+		F413915391CDC710D49CE9B0 /* Pods_WeightTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060ED9E8ABBEB2CE76AE1DD6 /* Pods_WeightTrackerTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A0F99AE20F25D52009E9822 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A0F999120F25D51009E9822 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A0F999820F25D51009E9822;
+			remoteInfo = WeightTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		060ED9E8ABBEB2CE76AE1DD6 /* Pods_WeightTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeightTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A0F999920F25D51009E9822 /* WeightTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A0F999C20F25D51009E9822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A0F999E20F25D51009E9822 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A0F99A120F25D51009E9822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A0F99A320F25D52009E9822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A0F99A620F25D52009E9822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A0F99A820F25D52009E9822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A0F99AD20F25D52009E9822 /* WeightTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeightTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A0F99B120F25D52009E9822 /* WeightTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTrackerTests.swift; sourceTree = "<group>"; };
+		4A0F99B320F25D52009E9822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A0F99BD20F25D6C009E9822 /* AddWeightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddWeightViewController.xib; sourceTree = "<group>"; };
+		4A0F99BE20F25D6C009E9822 /* AddWeightViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWeightViewModel.swift; sourceTree = "<group>"; };
+		4A0F99BF20F25D6C009E9822 /* AddWeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWeightViewController.swift; sourceTree = "<group>"; };
+		4A0F99C420F25D76009E9822 /* BMICalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMICalculator.swift; sourceTree = "<group>"; };
+		4A0F99C720F25D7B009E9822 /* DailyTargetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTargetCell.swift; sourceTree = "<group>"; };
+		4A0F99C820F25D7B009E9822 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		4A0F99C920F25D7B009E9822 /* CurrentWeightCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeightCell.swift; sourceTree = "<group>"; };
+		4A0F99CA20F25D7B009E9822 /* DailyTargetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DailyTargetCell.xib; sourceTree = "<group>"; };
+		4A0F99CB20F25D7B009E9822 /* ProgressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressCell.swift; sourceTree = "<group>"; };
+		4A0F99CC20F25D7B009E9822 /* ProgressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressCell.xib; sourceTree = "<group>"; };
+		4A0F99CD20F25D7B009E9822 /* CurrentWeightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentWeightCell.xib; sourceTree = "<group>"; };
+		4A0F99CE20F25D7B009E9822 /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		4A0F99CF20F25D7B009E9822 /* DashboardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		4A0F99D020F25D7B009E9822 /* BMICell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMICell.swift; sourceTree = "<group>"; };
+		4A0F99D120F25D7B009E9822 /* BMICell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMICell.xib; sourceTree = "<group>"; };
+		4A0F99DE20F25D81009E9822 /* RealmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		4A0F99E020F25D81009E9822 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		4A0F99E120F25D81009E9822 /* ResizableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizableViewCell.swift; sourceTree = "<group>"; };
+		4A0F99E220F25D81009E9822 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		4A0F99E320F25D81009E9822 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		4A0F99E520F25D81009E9822 /* Weight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		4A0F99E620F25D81009E9822 /* Height.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Height.swift; sourceTree = "<group>"; };
+		4A0F99EE20F25D87009E9822 /* UIColor+WeightTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+WeightTracker.swift"; sourceTree = "<group>"; };
+		949C34B017669E1DAC11A15F /* Pods-WeightTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightTrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeightTrackerTests/Pods-WeightTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		C4648BD3D78B0B5DF0F10AF9 /* Pods-WeightTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeightTracker/Pods-WeightTracker.release.xcconfig"; sourceTree = "<group>"; };
+		DB0A565CFD1CCBE4A3FE4B53 /* Pods-WeightTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeightTracker/Pods-WeightTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		E35D249DE4D947A33205AB0E /* Pods_WeightTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeightTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6B779B0627521B6C0E0E21F /* Pods-WeightTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightTrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeightTrackerTests/Pods-WeightTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A0F999620F25D51009E9822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34C8529B79F589ED9E23A98C /* Pods_WeightTracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A0F99AA20F25D52009E9822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F413915391CDC710D49CE9B0 /* Pods_WeightTrackerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A0F999020F25D51009E9822 = {
+			isa = PBXGroup;
+			children = (
+				4A0F999B20F25D51009E9822 /* WeightTracker */,
+				4A0F99B020F25D52009E9822 /* WeightTrackerTests */,
+				4A0F999A20F25D51009E9822 /* Products */,
+				936195080D01E91B8A5EF1F5 /* Pods */,
+				5B54AF76F63BEE8F24944B69 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4A0F999A20F25D51009E9822 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F999920F25D51009E9822 /* WeightTracker.app */,
+				4A0F99AD20F25D52009E9822 /* WeightTrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A0F999B20F25D51009E9822 /* WeightTracker */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F99DF20F25D81009E9822 /* Kit */,
+				4A0F99E420F25D81009E9822 /* Models */,
+				4A0F99DD20F25D81009E9822 /* Services */,
+				4A0F99C620F25D7B009E9822 /* Dashboard */,
+				4A0F99C320F25D76009E9822 /* Calculators */,
+				4A0F99BC20F25D6C009E9822 /* AddWeight */,
+				4A0F999C20F25D51009E9822 /* AppDelegate.swift */,
+				4A0F999E20F25D51009E9822 /* ViewController.swift */,
+				4A0F99EE20F25D87009E9822 /* UIColor+WeightTracker.swift */,
+				4A0F99A020F25D51009E9822 /* Main.storyboard */,
+				4A0F99A320F25D52009E9822 /* Assets.xcassets */,
+				4A0F99A520F25D52009E9822 /* LaunchScreen.storyboard */,
+				4A0F99A820F25D52009E9822 /* Info.plist */,
+			);
+			path = WeightTracker;
+			sourceTree = "<group>";
+		};
+		4A0F99B020F25D52009E9822 /* WeightTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F99B120F25D52009E9822 /* WeightTrackerTests.swift */,
+				4A0F99B320F25D52009E9822 /* Info.plist */,
+			);
+			path = WeightTrackerTests;
+			sourceTree = "<group>";
+		};
+		4A0F99BC20F25D6C009E9822 /* AddWeight */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F99BD20F25D6C009E9822 /* AddWeightViewController.xib */,
+				4A0F99BE20F25D6C009E9822 /* AddWeightViewModel.swift */,
+				4A0F99BF20F25D6C009E9822 /* AddWeightViewController.swift */,
+			);
+			path = AddWeight;
+			sourceTree = "<group>";
+		};
+		4A0F99C320F25D76009E9822 /* Calculators */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F99C420F25D76009E9822 /* BMICalculator.swift */,
+			);
+			path = Calculators;
+			sourceTree = "<group>";
+		};
+		4A0F99C620F25D7B009E9822 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F99C720F25D7B009E9822 /* DailyTargetCell.swift */,
+				4A0F99C820F25D7B009E9822 /* DashboardViewController.swift */,
+				4A0F99C920F25D7B009E9822 /* CurrentWeightCell.swift */,
+				4A0F99CA20F25D7B009E9822 /* DailyTargetCell.xib */,
+				4A0F99CB20F25D7B009E9822 /* ProgressCell.swift */,
+				4A0F99CC20F25D7B009E9822 /* ProgressCell.xib */,
+				4A0F99CD20F25D7B009E9822 /* CurrentWeightCell.xib */,
+				4A0F99CE20F25D7B009E9822 /* DashboardViewController.xib */,
+				4A0F99CF20F25D7B009E9822 /* DashboardViewModel.swift */,
+				4A0F99D020F25D7B009E9822 /* BMICell.swift */,
+				4A0F99D120F25D7B009E9822 /* BMICell.xib */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		4A0F99DD20F25D81009E9822 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F99DE20F25D81009E9822 /* RealmService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4A0F99DF20F25D81009E9822 /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F99E020F25D81009E9822 /* NibLoadableView.swift */,
+				4A0F99E120F25D81009E9822 /* ResizableViewCell.swift */,
+				4A0F99E220F25D81009E9822 /* ReusableView.swift */,
+				4A0F99E320F25D81009E9822 /* UICollectionView+Extensions.swift */,
+			);
+			path = Kit;
+			sourceTree = "<group>";
+		};
+		4A0F99E420F25D81009E9822 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F99E520F25D81009E9822 /* Weight.swift */,
+				4A0F99E620F25D81009E9822 /* Height.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B54AF76F63BEE8F24944B69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E35D249DE4D947A33205AB0E /* Pods_WeightTracker.framework */,
+				060ED9E8ABBEB2CE76AE1DD6 /* Pods_WeightTrackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		936195080D01E91B8A5EF1F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB0A565CFD1CCBE4A3FE4B53 /* Pods-WeightTracker.debug.xcconfig */,
+				C4648BD3D78B0B5DF0F10AF9 /* Pods-WeightTracker.release.xcconfig */,
+				F6B779B0627521B6C0E0E21F /* Pods-WeightTrackerTests.debug.xcconfig */,
+				949C34B017669E1DAC11A15F /* Pods-WeightTrackerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A0F999820F25D51009E9822 /* WeightTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A0F99B620F25D52009E9822 /* Build configuration list for PBXNativeTarget "WeightTracker" */;
+			buildPhases = (
+				82225E3AD931071231FF4F16 /* [CP] Check Pods Manifest.lock */,
+				4A0F999520F25D51009E9822 /* Sources */,
+				4A0F999620F25D51009E9822 /* Frameworks */,
+				4A0F999720F25D51009E9822 /* Resources */,
+				F33BE424B6F3C303BB255F84 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeightTracker;
+			productName = WeightTracker;
+			productReference = 4A0F999920F25D51009E9822 /* WeightTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A0F99AC20F25D52009E9822 /* WeightTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A0F99B920F25D52009E9822 /* Build configuration list for PBXNativeTarget "WeightTrackerTests" */;
+			buildPhases = (
+				5A2BAD833E113FF2F827B34E /* [CP] Check Pods Manifest.lock */,
+				4A0F99A920F25D52009E9822 /* Sources */,
+				4A0F99AA20F25D52009E9822 /* Frameworks */,
+				4A0F99AB20F25D52009E9822 /* Resources */,
+				B05791EEA942BE503717FEE6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A0F99AF20F25D52009E9822 /* PBXTargetDependency */,
+			);
+			name = WeightTrackerTests;
+			productName = WeightTrackerTests;
+			productReference = 4A0F99AD20F25D52009E9822 /* WeightTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A0F999120F25D51009E9822 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "James Beattie";
+				TargetAttributes = {
+					4A0F999820F25D51009E9822 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					4A0F99AC20F25D52009E9822 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 4A0F999820F25D51009E9822;
+					};
+				};
+			};
+			buildConfigurationList = 4A0F999420F25D51009E9822 /* Build configuration list for PBXProject "WeightTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A0F999020F25D51009E9822;
+			productRefGroup = 4A0F999A20F25D51009E9822 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A0F999820F25D51009E9822 /* WeightTracker */,
+				4A0F99AC20F25D52009E9822 /* WeightTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A0F999720F25D51009E9822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A0F99D820F25D7B009E9822 /* CurrentWeightCell.xib in Resources */,
+				4A0F99D520F25D7B009E9822 /* DailyTargetCell.xib in Resources */,
+				4A0F99C020F25D6C009E9822 /* AddWeightViewController.xib in Resources */,
+				4A0F99DC20F25D7B009E9822 /* BMICell.xib in Resources */,
+				4A0F99D920F25D7B009E9822 /* DashboardViewController.xib in Resources */,
+				4A0F99D720F25D7B009E9822 /* ProgressCell.xib in Resources */,
+				4A0F99A720F25D52009E9822 /* LaunchScreen.storyboard in Resources */,
+				4A0F99A420F25D52009E9822 /* Assets.xcassets in Resources */,
+				4A0F99A220F25D51009E9822 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A0F99AB20F25D52009E9822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A2BAD833E113FF2F827B34E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeightTrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82225E3AD931071231FF4F16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeightTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B05791EEA942BE503717FEE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeightTrackerTests/Pods-WeightTrackerTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeightTrackerTests/Pods-WeightTrackerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F33BE424B6F3C303BB255F84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeightTracker/Pods-WeightTracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeightTracker/Pods-WeightTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A0F999520F25D51009E9822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A0F99C220F25D6C009E9822 /* AddWeightViewController.swift in Sources */,
+				4A0F99DA20F25D7B009E9822 /* DashboardViewModel.swift in Sources */,
+				4A0F99ED20F25D81009E9822 /* Height.swift in Sources */,
+				4A0F99EC20F25D81009E9822 /* Weight.swift in Sources */,
+				4A0F99E920F25D81009E9822 /* ResizableViewCell.swift in Sources */,
+				4A0F99DB20F25D7B009E9822 /* BMICell.swift in Sources */,
+				4A0F99EB20F25D81009E9822 /* UICollectionView+Extensions.swift in Sources */,
+				4A0F99D320F25D7B009E9822 /* DashboardViewController.swift in Sources */,
+				4A0F999F20F25D51009E9822 /* ViewController.swift in Sources */,
+				4A0F99EA20F25D81009E9822 /* ReusableView.swift in Sources */,
+				4A0F99EF20F25D88009E9822 /* UIColor+WeightTracker.swift in Sources */,
+				4A0F99C520F25D76009E9822 /* BMICalculator.swift in Sources */,
+				4A0F99C120F25D6C009E9822 /* AddWeightViewModel.swift in Sources */,
+				4A0F99E720F25D81009E9822 /* RealmService.swift in Sources */,
+				4A0F99D420F25D7B009E9822 /* CurrentWeightCell.swift in Sources */,
+				4A0F99E820F25D81009E9822 /* NibLoadableView.swift in Sources */,
+				4A0F99D220F25D7B009E9822 /* DailyTargetCell.swift in Sources */,
+				4A0F99D620F25D7B009E9822 /* ProgressCell.swift in Sources */,
+				4A0F999D20F25D51009E9822 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A0F99A920F25D52009E9822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A0F99B220F25D52009E9822 /* WeightTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A0F99AF20F25D52009E9822 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A0F999820F25D51009E9822 /* WeightTracker */;
+			targetProxy = 4A0F99AE20F25D52009E9822 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A0F99A020F25D51009E9822 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A0F99A120F25D51009E9822 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A0F99A520F25D52009E9822 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A0F99A620F25D52009E9822 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A0F99B420F25D52009E9822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A0F99B520F25D52009E9822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A0F99B720F25D52009E9822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB0A565CFD1CCBE4A3FE4B53 /* Pods-WeightTracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U69Y38AA58;
+				INFOPLIST_FILE = WeightTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.jabeattie.WeightTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A0F99B820F25D52009E9822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4648BD3D78B0B5DF0F10AF9 /* Pods-WeightTracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U69Y38AA58;
+				INFOPLIST_FILE = WeightTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.jabeattie.WeightTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A0F99BA20F25D52009E9822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6B779B0627521B6C0E0E21F /* Pods-WeightTrackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U69Y38AA58;
+				INFOPLIST_FILE = WeightTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.jabeattie.WeightTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeightTracker.app/WeightTracker";
+			};
+			name = Debug;
+		};
+		4A0F99BB20F25D52009E9822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 949C34B017669E1DAC11A15F /* Pods-WeightTrackerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U69Y38AA58;
+				INFOPLIST_FILE = WeightTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.jabeattie.WeightTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeightTracker.app/WeightTracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A0F999420F25D51009E9822 /* Build configuration list for PBXProject "WeightTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A0F99B420F25D52009E9822 /* Debug */,
+				4A0F99B520F25D52009E9822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A0F99B620F25D52009E9822 /* Build configuration list for PBXNativeTarget "WeightTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A0F99B720F25D52009E9822 /* Debug */,
+				4A0F99B820F25D52009E9822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A0F99B920F25D52009E9822 /* Build configuration list for PBXNativeTarget "WeightTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A0F99BA20F25D52009E9822 /* Debug */,
+				4A0F99BB20F25D52009E9822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A0F999120F25D51009E9822 /* Project object */;
+}
