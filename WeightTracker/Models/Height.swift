@@ -11,9 +11,14 @@ import RealmSwift
 
 class Height: Object {
     /// Height in mms
-    @objc dynamic var value: Int64 = 0
+    @objc dynamic var value: Double = 0
     
-    var heightInMetres: Double {
-        return Double(value) / 1000
+    convenience init(figure: Double) {
+        self.init()
+        self.value = figure
+    }
+    
+    var measurement: Measurement<UnitLength> {
+        return Measurement(value: value, unit: UnitLength.millimeters)
     }
 }

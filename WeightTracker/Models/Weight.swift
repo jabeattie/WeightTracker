@@ -11,9 +11,16 @@ import RealmSwift
 
 class Weight: Object {
     /// Weight in grams
-    @objc dynamic var value: Int64 = 0
+    @objc dynamic var value: Double = 0
+    @objc dynamic var date: Date = Date()
     
-    var weightInKgs: Double {
-        return Double(value) / 1000
+    convenience init(figure: Double, date: Date = Date()) {
+        self.init()
+        self.value = figure
+        self.date = date
+    }
+    
+    var measurement: Measurement<UnitMass> {
+        return Measurement(value: value, unit: UnitMass.grams)
     }
 }

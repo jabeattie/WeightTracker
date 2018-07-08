@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		34C8529B79F589ED9E23A98C /* Pods_WeightTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E35D249DE4D947A33205AB0E /* Pods_WeightTracker.framework */; };
 		4A0F999D20F25D51009E9822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F999C20F25D51009E9822 /* AppDelegate.swift */; };
-		4A0F999F20F25D51009E9822 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F999E20F25D51009E9822 /* ViewController.swift */; };
-		4A0F99A220F25D51009E9822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A0F99A020F25D51009E9822 /* Main.storyboard */; };
 		4A0F99A420F25D52009E9822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0F99A320F25D52009E9822 /* Assets.xcassets */; };
 		4A0F99A720F25D52009E9822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A0F99A520F25D52009E9822 /* LaunchScreen.storyboard */; };
 		4A0F99B220F25D52009E9822 /* WeightTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99B120F25D52009E9822 /* WeightTrackerTests.swift */; };
@@ -37,6 +35,20 @@
 		4A0F99EC20F25D81009E9822 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99E520F25D81009E9822 /* Weight.swift */; };
 		4A0F99ED20F25D81009E9822 /* Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99E620F25D81009E9822 /* Height.swift */; };
 		4A0F99EF20F25D88009E9822 /* UIColor+WeightTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99EE20F25D87009E9822 /* UIColor+WeightTracker.swift */; };
+		4A0F99F120F25F43009E9822 /* HeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99F020F25F43009E9822 /* HeightTests.swift */; };
+		4A0F99F320F25FC8009E9822 /* WeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99F220F25FC8009E9822 /* WeightTests.swift */; };
+		4A0F99F520F2605B009E9822 /* BMICalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99F420F2605B009E9822 /* BMICalculatorTests.swift */; };
+		4A0F99F820F26436009E9822 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99F720F26436009E9822 /* User.swift */; };
+		4A0F99FA20F268DC009E9822 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99F920F268DC009E9822 /* TabBarController.swift */; };
+		4A0F99FD20F26F5E009E9822 /* AppearanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99FC20F26F5E009E9822 /* AppearanceService.swift */; };
+		4A0F9A0020F272F2009E9822 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F99FE20F272F2009E9822 /* OnboardingViewController.swift */; };
+		4A0F9A0120F272F2009E9822 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0F99FF20F272F2009E9822 /* OnboardingViewController.xib */; };
+		4A0F9A0520F282DB009E9822 /* OnBoardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F9A0420F282DB009E9822 /* OnBoardingViewModel.swift */; };
+		4A0F9A0820F288C3009E9822 /* WeightDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F9A0720F288C3009E9822 /* WeightDecorator.swift */; };
+		4A0F9A0A20F2893D009E9822 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F9A0920F2893D009E9822 /* Double+Extension.swift */; };
+		4A0F9A0E20F2A9AF009E9822 /* CalorieCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F9A0D20F2A9AF009E9822 /* CalorieCalculator.swift */; };
+		4A0F9A1020F2B49C009E9822 /* CalorieCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F9A0F20F2B49C009E9822 /* CalorieCalculatorTests.swift */; };
+		4A0F9A1220F2B75D009E9822 /* WeightDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F9A1120F2B75D009E9822 /* WeightDecoratorTests.swift */; };
 		F413915391CDC710D49CE9B0 /* Pods_WeightTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060ED9E8ABBEB2CE76AE1DD6 /* Pods_WeightTrackerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +66,6 @@
 		060ED9E8ABBEB2CE76AE1DD6 /* Pods_WeightTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeightTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0F999920F25D51009E9822 /* WeightTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0F999C20F25D51009E9822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A0F999E20F25D51009E9822 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4A0F99A120F25D51009E9822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A0F99A320F25D52009E9822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A0F99A620F25D52009E9822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A0F99A820F25D52009E9822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +95,20 @@
 		4A0F99E520F25D81009E9822 /* Weight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
 		4A0F99E620F25D81009E9822 /* Height.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Height.swift; sourceTree = "<group>"; };
 		4A0F99EE20F25D87009E9822 /* UIColor+WeightTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+WeightTracker.swift"; sourceTree = "<group>"; };
+		4A0F99F020F25F43009E9822 /* HeightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightTests.swift; sourceTree = "<group>"; };
+		4A0F99F220F25FC8009E9822 /* WeightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTests.swift; sourceTree = "<group>"; };
+		4A0F99F420F2605B009E9822 /* BMICalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorTests.swift; sourceTree = "<group>"; };
+		4A0F99F720F26436009E9822 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4A0F99F920F268DC009E9822 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4A0F99FC20F26F5E009E9822 /* AppearanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceService.swift; sourceTree = "<group>"; };
+		4A0F99FE20F272F2009E9822 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		4A0F99FF20F272F2009E9822 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		4A0F9A0420F282DB009E9822 /* OnBoardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewModel.swift; sourceTree = "<group>"; };
+		4A0F9A0720F288C3009E9822 /* WeightDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightDecorator.swift; sourceTree = "<group>"; };
+		4A0F9A0920F2893D009E9822 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		4A0F9A0D20F2A9AF009E9822 /* CalorieCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCalculator.swift; sourceTree = "<group>"; };
+		4A0F9A0F20F2B49C009E9822 /* CalorieCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCalculatorTests.swift; sourceTree = "<group>"; };
+		4A0F9A1120F2B75D009E9822 /* WeightDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightDecoratorTests.swift; sourceTree = "<group>"; };
 		949C34B017669E1DAC11A15F /* Pods-WeightTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightTrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeightTrackerTests/Pods-WeightTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 		C4648BD3D78B0B5DF0F10AF9 /* Pods-WeightTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeightTracker/Pods-WeightTracker.release.xcconfig"; sourceTree = "<group>"; };
 		DB0A565CFD1CCBE4A3FE4B53 /* Pods-WeightTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeightTracker/Pods-WeightTracker.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,19 +159,19 @@
 		4A0F999B20F25D51009E9822 /* WeightTracker */ = {
 			isa = PBXGroup;
 			children = (
+				4A0F9A0620F288B5009E9822 /* Decorators */,
+				4A0F9A0320F282B9009E9822 /* OnBoarding */,
+				4A0F99F620F2613F009E9822 /* ProjectExtensions */,
 				4A0F99DF20F25D81009E9822 /* Kit */,
 				4A0F99E420F25D81009E9822 /* Models */,
 				4A0F99DD20F25D81009E9822 /* Services */,
 				4A0F99C620F25D7B009E9822 /* Dashboard */,
 				4A0F99C320F25D76009E9822 /* Calculators */,
 				4A0F99BC20F25D6C009E9822 /* AddWeight */,
-				4A0F999C20F25D51009E9822 /* AppDelegate.swift */,
-				4A0F999E20F25D51009E9822 /* ViewController.swift */,
-				4A0F99EE20F25D87009E9822 /* UIColor+WeightTracker.swift */,
-				4A0F99A020F25D51009E9822 /* Main.storyboard */,
 				4A0F99A320F25D52009E9822 /* Assets.xcassets */,
 				4A0F99A520F25D52009E9822 /* LaunchScreen.storyboard */,
 				4A0F99A820F25D52009E9822 /* Info.plist */,
+				4A0F99F920F268DC009E9822 /* TabBarController.swift */,
 			);
 			path = WeightTracker;
 			sourceTree = "<group>";
@@ -157,6 +181,11 @@
 			children = (
 				4A0F99B120F25D52009E9822 /* WeightTrackerTests.swift */,
 				4A0F99B320F25D52009E9822 /* Info.plist */,
+				4A0F99F020F25F43009E9822 /* HeightTests.swift */,
+				4A0F99F220F25FC8009E9822 /* WeightTests.swift */,
+				4A0F99F420F2605B009E9822 /* BMICalculatorTests.swift */,
+				4A0F9A0F20F2B49C009E9822 /* CalorieCalculatorTests.swift */,
+				4A0F9A1120F2B75D009E9822 /* WeightDecoratorTests.swift */,
 			);
 			path = WeightTrackerTests;
 			sourceTree = "<group>";
@@ -175,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				4A0F99C420F25D76009E9822 /* BMICalculator.swift */,
+				4A0F9A0D20F2A9AF009E9822 /* CalorieCalculator.swift */,
 			);
 			path = Calculators;
 			sourceTree = "<group>";
@@ -182,17 +212,10 @@
 		4A0F99C620F25D7B009E9822 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				4A0F99C720F25D7B009E9822 /* DailyTargetCell.swift */,
+				4A0F99FB20F26A57009E9822 /* Cells */,
 				4A0F99C820F25D7B009E9822 /* DashboardViewController.swift */,
-				4A0F99C920F25D7B009E9822 /* CurrentWeightCell.swift */,
-				4A0F99CA20F25D7B009E9822 /* DailyTargetCell.xib */,
-				4A0F99CB20F25D7B009E9822 /* ProgressCell.swift */,
-				4A0F99CC20F25D7B009E9822 /* ProgressCell.xib */,
-				4A0F99CD20F25D7B009E9822 /* CurrentWeightCell.xib */,
 				4A0F99CE20F25D7B009E9822 /* DashboardViewController.xib */,
 				4A0F99CF20F25D7B009E9822 /* DashboardViewModel.swift */,
-				4A0F99D020F25D7B009E9822 /* BMICell.swift */,
-				4A0F99D120F25D7B009E9822 /* BMICell.xib */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -200,7 +223,9 @@
 		4A0F99DD20F25D81009E9822 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				4A0F999C20F25D51009E9822 /* AppDelegate.swift */,
 				4A0F99DE20F25D81009E9822 /* RealmService.swift */,
+				4A0F99FC20F26F5E009E9822 /* AppearanceService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -212,6 +237,7 @@
 				4A0F99E120F25D81009E9822 /* ResizableViewCell.swift */,
 				4A0F99E220F25D81009E9822 /* ReusableView.swift */,
 				4A0F99E320F25D81009E9822 /* UICollectionView+Extensions.swift */,
+				4A0F9A0920F2893D009E9822 /* Double+Extension.swift */,
 			);
 			path = Kit;
 			sourceTree = "<group>";
@@ -221,8 +247,50 @@
 			children = (
 				4A0F99E520F25D81009E9822 /* Weight.swift */,
 				4A0F99E620F25D81009E9822 /* Height.swift */,
+				4A0F99F720F26436009E9822 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4A0F99F620F2613F009E9822 /* ProjectExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F99EE20F25D87009E9822 /* UIColor+WeightTracker.swift */,
+			);
+			path = ProjectExtensions;
+			sourceTree = "<group>";
+		};
+		4A0F99FB20F26A57009E9822 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F99D020F25D7B009E9822 /* BMICell.swift */,
+				4A0F99D120F25D7B009E9822 /* BMICell.xib */,
+				4A0F99C920F25D7B009E9822 /* CurrentWeightCell.swift */,
+				4A0F99CD20F25D7B009E9822 /* CurrentWeightCell.xib */,
+				4A0F99C720F25D7B009E9822 /* DailyTargetCell.swift */,
+				4A0F99CA20F25D7B009E9822 /* DailyTargetCell.xib */,
+				4A0F99CB20F25D7B009E9822 /* ProgressCell.swift */,
+				4A0F99CC20F25D7B009E9822 /* ProgressCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4A0F9A0320F282B9009E9822 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F99FE20F272F2009E9822 /* OnboardingViewController.swift */,
+				4A0F99FF20F272F2009E9822 /* OnboardingViewController.xib */,
+				4A0F9A0420F282DB009E9822 /* OnBoardingViewModel.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		4A0F9A0620F288B5009E9822 /* Decorators */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F9A0720F288C3009E9822 /* WeightDecorator.swift */,
+			);
+			path = Decorators;
 			sourceTree = "<group>";
 		};
 		5B54AF76F63BEE8F24944B69 /* Frameworks */ = {
@@ -335,10 +403,10 @@
 				4A0F99C020F25D6C009E9822 /* AddWeightViewController.xib in Resources */,
 				4A0F99DC20F25D7B009E9822 /* BMICell.xib in Resources */,
 				4A0F99D920F25D7B009E9822 /* DashboardViewController.xib in Resources */,
+				4A0F9A0120F272F2009E9822 /* OnboardingViewController.xib in Resources */,
 				4A0F99D720F25D7B009E9822 /* ProgressCell.xib in Resources */,
 				4A0F99A720F25D52009E9822 /* LaunchScreen.storyboard in Resources */,
 				4A0F99A420F25D52009E9822 /* Assets.xcassets in Resources */,
-				4A0F99A220F25D51009E9822 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,20 +514,27 @@
 				4A0F99ED20F25D81009E9822 /* Height.swift in Sources */,
 				4A0F99EC20F25D81009E9822 /* Weight.swift in Sources */,
 				4A0F99E920F25D81009E9822 /* ResizableViewCell.swift in Sources */,
+				4A0F9A0E20F2A9AF009E9822 /* CalorieCalculator.swift in Sources */,
 				4A0F99DB20F25D7B009E9822 /* BMICell.swift in Sources */,
 				4A0F99EB20F25D81009E9822 /* UICollectionView+Extensions.swift in Sources */,
 				4A0F99D320F25D7B009E9822 /* DashboardViewController.swift in Sources */,
-				4A0F999F20F25D51009E9822 /* ViewController.swift in Sources */,
 				4A0F99EA20F25D81009E9822 /* ReusableView.swift in Sources */,
+				4A0F9A0020F272F2009E9822 /* OnboardingViewController.swift in Sources */,
 				4A0F99EF20F25D88009E9822 /* UIColor+WeightTracker.swift in Sources */,
+				4A0F9A0820F288C3009E9822 /* WeightDecorator.swift in Sources */,
 				4A0F99C520F25D76009E9822 /* BMICalculator.swift in Sources */,
 				4A0F99C120F25D6C009E9822 /* AddWeightViewModel.swift in Sources */,
 				4A0F99E720F25D81009E9822 /* RealmService.swift in Sources */,
+				4A0F99FD20F26F5E009E9822 /* AppearanceService.swift in Sources */,
+				4A0F99FA20F268DC009E9822 /* TabBarController.swift in Sources */,
 				4A0F99D420F25D7B009E9822 /* CurrentWeightCell.swift in Sources */,
 				4A0F99E820F25D81009E9822 /* NibLoadableView.swift in Sources */,
 				4A0F99D220F25D7B009E9822 /* DailyTargetCell.swift in Sources */,
+				4A0F9A0520F282DB009E9822 /* OnBoardingViewModel.swift in Sources */,
 				4A0F99D620F25D7B009E9822 /* ProgressCell.swift in Sources */,
 				4A0F999D20F25D51009E9822 /* AppDelegate.swift in Sources */,
+				4A0F9A0A20F2893D009E9822 /* Double+Extension.swift in Sources */,
+				4A0F99F820F26436009E9822 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +542,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0F9A1020F2B49C009E9822 /* CalorieCalculatorTests.swift in Sources */,
+				4A0F99F520F2605B009E9822 /* BMICalculatorTests.swift in Sources */,
+				4A0F99F120F25F43009E9822 /* HeightTests.swift in Sources */,
 				4A0F99B220F25D52009E9822 /* WeightTrackerTests.swift in Sources */,
+				4A0F99F320F25FC8009E9822 /* WeightTests.swift in Sources */,
+				4A0F9A1220F2B75D009E9822 /* WeightDecoratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,14 +562,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4A0F99A020F25D51009E9822 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A0F99A120F25D51009E9822 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4A0F99A520F25D52009E9822 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

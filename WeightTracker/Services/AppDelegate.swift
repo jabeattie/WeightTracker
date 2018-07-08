@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var services: [UIApplicationDelegate] = [RealmService.default]
+    var services: [UIApplicationDelegate] = [RealmService.default, AppearanceService.default]
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
@@ -20,8 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             _ = $0.application?(application, didFinishLaunchingWithOptions: launchOptions)
         }
         
-        let vc = DashboardViewController(viewModel: DashboardViewModel())
-        window?.rootViewController = vc
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = TabBarController()
+        window?.makeKeyAndVisible()
         
         return true
     }

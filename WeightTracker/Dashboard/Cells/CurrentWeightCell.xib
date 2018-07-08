@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CurrentWeightCell" customModule="Weight_tracker" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CurrentWeightCell" customModule="WeightTracker" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="340" height="284"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -24,8 +25,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZYv-nO-FRq">
                                 <rect key="frame" x="32" y="69.5" width="276" height="182.5"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weight" translatesAutoresizingMaskIntoConstraints="NO" id="3nT-zx-Jaa">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weight" translatesAutoresizingMaskIntoConstraints="NO" id="3nT-zx-Jaa">
                                         <rect key="frame" x="103" y="0.0" width="70" height="70"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="uPo-Cl-QsH"/>
                                             <constraint firstAttribute="height" constant="70" id="yJh-cb-Xo9"/>
@@ -74,6 +76,7 @@
             <size key="customSize" width="340" height="285"/>
             <connections>
                 <outlet property="background" destination="4K5-YP-JTn" id="j7z-Gy-e7r"/>
+                <outlet property="image" destination="3nT-zx-Jaa" id="RWG-XD-9D5"/>
                 <outlet property="time" destination="D6a-j7-6Rs" id="fid-TR-Pcb"/>
                 <outlet property="title" destination="vSM-1P-Bwt" id="yS3-OX-9Vx"/>
                 <outlet property="weight" destination="N5N-ni-48x" id="eAa-OA-zpO"/>
@@ -82,6 +85,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Weight" width="63" height="58"/>
+        <image name="weight" width="24" height="24"/>
     </resources>
 </document>

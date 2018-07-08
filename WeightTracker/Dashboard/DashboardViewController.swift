@@ -69,9 +69,13 @@ extension DashboardViewController: UICollectionViewDataSource {
         switch indexPath.item {
         case 0:
             let cell: CurrentWeightCell = collectionView.dequeueReusableCell(for: indexPath)
+            let cellVM = viewModel.currentWeightCellViewModel
+            cell.update(cellVM)
             return cell
         case 1:
             let cell: BMICell = collectionView.dequeueReusableCell(for: indexPath)
+            let cellVM = viewModel.bmiCellViewModel
+            cell.update(cellVM)
             return cell
         case 2:
             let cell: DailyTargetCell = collectionView.dequeueReusableCell(for: indexPath)

@@ -17,8 +17,8 @@ struct BMICalculator {
     ///   - height: height of person in mms
     /// - Returns: the BMI value
     func calculate(weight: Weight, height: Height) -> Double {
-        let weightInKgs = weight.weightInKgs
-        let heightInMetres = height.heightInMetres
-        return weightInKgs / (heightInMetres * heightInMetres)
+        let weightInKgs = weight.measurement.converted(to: UnitMass.kilograms)
+        let heightInMetres = height.measurement.converted(to: UnitLength.meters)
+        return weightInKgs.value / (heightInMetres.value * heightInMetres.value)
     }
 }

@@ -27,10 +27,23 @@ class RealmService: NSObject, UIApplicationDelegate {
             }
         }
         
-        _ = try? Realm(configuration: config)
+        let realm = try? Realm(configuration: config)
         Realm.Configuration.defaultConfiguration = config
         configuration = config
         print(config.fileURL!.absoluteString)
+        
+        let user = User()
+        let height = Height()
+        height.value = 1780
+        user.height = height
+        let weight = Weight()
+        weight.value = 78000
+        user.pastWeights.append(weight)
+        
+        try? realm?.write {
+            realm?.deleteAll()
+            realm?.add(user)
+        }
         
         return true
     }
