@@ -11,14 +11,14 @@ import Foundation
 struct WeightDecorator {
     private let preference: User.MeasurementPreference
     private let formatter: MeasurementFormatter
-    
+
     init(preference: User.MeasurementPreference) {
         self.preference = preference
         formatter = MeasurementFormatter()
         formatter.locale = Locale(identifier: "en_GB")
         formatter.unitStyle = .short
     }
-    
+
     func displayValue(for weight: Weight) -> String? {
         switch preference {
         case .imperial:

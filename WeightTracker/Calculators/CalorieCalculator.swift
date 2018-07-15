@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 /// Calorie calulator based upon the Mifflin-St. Jeor equation
 struct CalorieCalculator {
     
@@ -28,7 +27,7 @@ struct CalorieCalculator {
     ///   - age: age of person in years
     /// - Returns: the BMI value
     func calculate(user: User) -> Double {
-        let optionalWeight = user.targetWeight ?? user.currentWeight
+        let optionalWeight = user.targetWeight?.target ?? user.currentWeight
         guard let weight = optionalWeight, let height = user.height else { return 0 }
         
         let weightInKgs = weight.measurement.converted(to: UnitMass.kilograms).value
