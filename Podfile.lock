@@ -2,7 +2,10 @@ PODS:
   - Charts (3.1.1):
     - Charts/Core (= 3.1.1)
   - Charts/Core (3.1.1)
+  - fluid-slider (0.0.6):
+    - pop
   - Nimble (7.1.3)
+  - pop (1.0.10)
   - Quick (1.3.0)
   - ReactiveSwift (3.1.0):
     - Result (~> 3.2)
@@ -12,33 +15,42 @@ PODS:
   - RealmSwift (3.7.4):
     - Realm (= 3.7.4)
   - Result (3.2.4)
+  - SwiftLint (0.26.0)
 
 DEPENDENCIES:
   - Charts
+  - fluid-slider
   - Nimble
   - Quick
   - ReactiveSwift
   - RealmSwift
+  - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Charts
+    - fluid-slider
     - Nimble
+    - pop
     - Quick
     - ReactiveSwift
     - Realm
     - RealmSwift
     - Result
+    - SwiftLint
 
 SPEC CHECKSUMS:
   Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
+  fluid-slider: 3aeb48bd7f875dc0431963fde12674e69c7c0ed2
   Nimble: 2839b01d1b31f6a6a7777a221f0d91cf52e8e27b
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
   ReactiveSwift: 5b26d2e988fe0eed2daf48c4054d1de74db50184
   Realm: a469bb59e33f9926102ccaea4349822c53b9117e
   RealmSwift: a45861b21c180f5cf0f122144b9759fa8dde3e9e
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
 
-PODFILE CHECKSUM: 8ec58308d434cb1ce66416cc3533144744d94f2a
+PODFILE CHECKSUM: 43b078b279da785b18bb3dcd4c0e4a66deaf7626
 
 COCOAPODS: 1.5.3

@@ -7,7 +7,9 @@ target 'WeightTracker' do
   # Pods for Weighttracker
   pod 'Charts'
   pod 'RealmSwift'
+  pod 'fluid-slider'
   pod 'ReactiveSwift'
+  pod 'SwiftLint'
 
   target 'WeightTrackerTests' do
     inherit! :search_paths
