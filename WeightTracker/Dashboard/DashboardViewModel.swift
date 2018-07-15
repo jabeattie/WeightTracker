@@ -8,18 +8,32 @@
 
 import Foundation
 import RealmSwift
+import ReactiveSwift
+import Result
 
 class DashboardViewModel {
+    let updateSignal: Signal<Void, NoError>
+    
     private let configuration: Realm.Configuration
+    private let userEventBus: UserEventBus
+    private let updateObserver: Signal<Void, NoError>.Observer
     private var user: User?
     
     private var realm: Realm? {
         return try? Realm(configuration: configuration)
     }
     
-    init(configuration: Realm.Configuration = RealmService.default.configuration) {
+    init(configuration: Realm.Configuration = RealmService.default.configuration, userEventBus: UserEventBus = EventBus.default) {
         self.configuration = configuration
+        self.userEventBus = userEventBus
+        (updateSignal, updateObserver) = Signal<Void, NoError>.pipe()
         self.user = loadUser()
+    }
+    
+    private func listenForEvents() {
+        userEventBus.userEvents.observeValues { [weak self] (_) in
+            self?.updateObserver.send(value: ())
+        }
     }
     
     private func loadUser() -> User? {

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ReactiveSwift
 
 class DashboardViewController: UIViewController {
     
@@ -57,7 +58,12 @@ class DashboardViewController: UIViewController {
         print(collectionView.frame.size.width)
     }
     
-
+    private func listenForUpdates() {
+        viewModel.updateSignal.observe(on: UIScheduler()).observeValues { [weak self] (_) in
+            self?.collectionView.reloadData()
+        }
+    }
+    
 }
 
 extension DashboardViewController: UICollectionViewDataSource {
