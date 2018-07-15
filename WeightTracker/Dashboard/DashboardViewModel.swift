@@ -35,4 +35,8 @@ class DashboardViewModel {
     public var bmiCellViewModel: BMICellViewModel {
         return BMICellViewModel(user: user, calculator: BMICalculator())
     }
+    
+    public var dailyTargetCellViewModel: DailyTargetCellViewModel {
+        return DailyTargetCellViewModel(user: user, calculator: CalorieCalculator())
+    }
 }

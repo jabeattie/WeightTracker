@@ -79,6 +79,8 @@ extension DashboardViewController: UICollectionViewDataSource {
             return cell
         case 2:
             let cell: DailyTargetCell = collectionView.dequeueReusableCell(for: indexPath)
+            let cellVM = viewModel.dailyTargetCellViewModel
+            cell.update(cellVM)
             return cell
         case 3:
             let cell: ProgressCell = collectionView.dequeueReusableCell(for: indexPath)
