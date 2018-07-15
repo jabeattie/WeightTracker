@@ -335,6 +335,7 @@
 			buildConfigurationList = 4A0F99B620F25D52009E9822 /* Build configuration list for PBXNativeTarget "WeightTracker" */;
 			buildPhases = (
 				82225E3AD931071231FF4F16 /* [CP] Check Pods Manifest.lock */,
+				4AF0AB7C20FBC6AF002FF908 /* SwiftLint */,
 				4A0F999520F25D51009E9822 /* Sources */,
 				4A0F999620F25D51009E9822 /* Frameworks */,
 				4A0F999720F25D51009E9822 /* Resources */,
@@ -434,6 +435,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4AF0AB7C20FBC6AF002FF908 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
 		5A2BAD833E113FF2F827B34E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
