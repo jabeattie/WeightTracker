@@ -32,7 +32,10 @@ class TabBarController: UITabBarController {
         let viewModel = DashboardViewModel()
         let dashboardVC = DashboardViewController(viewModel: viewModel)
         dashboardVC.tabBarItem = UITabBarItem(title: "Dashboard", image: UIImage(named: "home"), tag: 0)
-        return [dashboardVC]
+        let addWeightVM = AddWeightViewModel()
+        let addWeightVC = AddWeightViewController(viewModel: addWeightVM)
+        addWeightVC.tabBarItem = UITabBarItem(title: "Add weight", image: UIImage(named: "plus"), tag: 1)
+        return [dashboardVC, addWeightVC]
     }
 
 }
