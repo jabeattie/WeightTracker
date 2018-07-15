@@ -14,7 +14,7 @@ class User: Object {
         case imperial
         case metric
     }
-    
+
     enum ActivityLevel: Int {
         case sedentary
         case moderate
@@ -31,7 +31,7 @@ class User: Object {
             }
         }
     }
-    
+
     enum Sex: String {
         case male
         case female
@@ -42,13 +42,13 @@ class User: Object {
     @objc private dynamic var sexRaw: String?
     @objc private dynamic var preferenceRaw: String?
     @objc private dynamic var activityRaw: Int = 0
-    @objc dynamic var targetWeight: Weight?
+    @objc dynamic var targetWeight: TargetWeight?
     let pastWeights = List<Weight>()
-    
+
     var currentWeight: Weight? {
         return pastWeights.sorted(byKeyPath: "date").last
     }
-    
+
     var preference: MeasurementPreference {
         get {
             guard let raw = preferenceRaw else { return .metric }
@@ -58,7 +58,7 @@ class User: Object {
             preferenceRaw = newValue.rawValue
         }
     }
-    
+
     var activityLevel: ActivityLevel {
         get {
             return ActivityLevel(rawValue: activityRaw) ?? .sedentary
@@ -67,7 +67,7 @@ class User: Object {
             activityRaw = newValue.rawValue
         }
     }
-    
+
     var sex: Sex {
         get {
             guard let raw = sexRaw else { return .male }

@@ -49,6 +49,8 @@
 		4A0F9A0E20F2A9AF009E9822 /* CalorieCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F9A0D20F2A9AF009E9822 /* CalorieCalculator.swift */; };
 		4A0F9A1020F2B49C009E9822 /* CalorieCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F9A0F20F2B49C009E9822 /* CalorieCalculatorTests.swift */; };
 		4A0F9A1220F2B75D009E9822 /* WeightDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F9A1120F2B75D009E9822 /* WeightDecoratorTests.swift */; };
+		4AF0AB7E20FBC98B002FF908 /* ProgressCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF0AB7D20FBC98B002FF908 /* ProgressCalculator.swift */; };
+		4AF0AB8020FBC9FE002FF908 /* TargetWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF0AB7F20FBC9FE002FF908 /* TargetWeight.swift */; };
 		4AF0AB8220FBDA4A002FF908 /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF0AB8120FBDA4A002FF908 /* EventBus.swift */; };
 		4AF0AB8520FBDAE1002FF908 /* UserEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF0AB8420FBDAE1002FF908 /* UserEvents.swift */; };
 		F413915391CDC710D49CE9B0 /* Pods_WeightTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060ED9E8ABBEB2CE76AE1DD6 /* Pods_WeightTrackerTests.framework */; };
@@ -111,6 +113,8 @@
 		4A0F9A0D20F2A9AF009E9822 /* CalorieCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCalculator.swift; sourceTree = "<group>"; };
 		4A0F9A0F20F2B49C009E9822 /* CalorieCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCalculatorTests.swift; sourceTree = "<group>"; };
 		4A0F9A1120F2B75D009E9822 /* WeightDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightDecoratorTests.swift; sourceTree = "<group>"; };
+		4AF0AB7D20FBC98B002FF908 /* ProgressCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCalculator.swift; sourceTree = "<group>"; };
+		4AF0AB7F20FBC9FE002FF908 /* TargetWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetWeight.swift; sourceTree = "<group>"; };
 		4AF0AB8120FBDA4A002FF908 /* EventBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBus.swift; sourceTree = "<group>"; };
 		4AF0AB8420FBDAE1002FF908 /* UserEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEvents.swift; sourceTree = "<group>"; };
 		949C34B017669E1DAC11A15F /* Pods-WeightTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightTrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeightTrackerTests/Pods-WeightTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 			children = (
 				4A0F99C420F25D76009E9822 /* BMICalculator.swift */,
 				4A0F9A0D20F2A9AF009E9822 /* CalorieCalculator.swift */,
+				4AF0AB7D20FBC98B002FF908 /* ProgressCalculator.swift */,
 			);
 			path = Calculators;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 				4A0F99E520F25D81009E9822 /* Weight.swift */,
 				4A0F99E620F25D81009E9822 /* Height.swift */,
 				4A0F99F720F26436009E9822 /* User.swift */,
+				4AF0AB7F20FBC9FE002FF908 /* TargetWeight.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -542,6 +548,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AF0AB7E20FBC98B002FF908 /* ProgressCalculator.swift in Sources */,
 				4A0F99C220F25D6C009E9822 /* AddWeightViewController.swift in Sources */,
 				4A0F99DA20F25D7B009E9822 /* DashboardViewModel.swift in Sources */,
 				4A0F99ED20F25D81009E9822 /* Height.swift in Sources */,
@@ -558,6 +565,7 @@
 				4A0F9A0820F288C3009E9822 /* WeightDecorator.swift in Sources */,
 				4A0F99C520F25D76009E9822 /* BMICalculator.swift in Sources */,
 				4A0F99C120F25D6C009E9822 /* AddWeightViewModel.swift in Sources */,
+				4AF0AB8020FBC9FE002FF908 /* TargetWeight.swift in Sources */,
 				4A0F99E720F25D81009E9822 /* RealmService.swift in Sources */,
 				4A0F99FD20F26F5E009E9822 /* AppearanceService.swift in Sources */,
 				4A0F99FA20F268DC009E9822 /* TabBarController.swift in Sources */,

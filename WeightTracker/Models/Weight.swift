@@ -14,10 +14,20 @@ class Weight: Object {
     @objc dynamic var value: Double = 0
     @objc dynamic var date: Date = Date()
     
+    convenience init(measurement: Measurement<UnitMass>, date: Date = Date()) {
+        self.init()
+        self.value = measurement.converted(to: .grams).value
+        self.date = date
+    }
+    
     convenience init(figure: Double, date: Date = Date()) {
         self.init()
         self.value = figure
         self.date = date
+    }
+    
+    static var zero: Weight {
+        return Weight(figure: 0)
     }
     
     var measurement: Measurement<UnitMass> {
