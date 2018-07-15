@@ -9,6 +9,52 @@
 import UIKit
 import Charts
 
+class ProgressCellViewModel {
+    private let decorator: WeightDecorator
+    private let calculator: ProgressCalculator
+    private let user: User?
+    private var cachedProgress: ProgressCalculator.WeightProgess?
+    
+    init(user: User?, calculator: ProgressCalculator, decorator: WeightDecorator) {
+        self.calculator = calculator
+        self.decorator = decorator
+        self.user = user
+        guard let target = user?.targetWeight, let current = user?.currentWeight else { return }
+        self.cachedProgress = calculator.calculate(targetWeight: target, currentWeight: current)
+    }
+    
+    var progress: (Double, Double) {
+        guard let progress = cachedProgress else { return (0.0, 0.0) }
+        let complete = progress.progress
+        let toGo = 1 - complete
+        return (complete, toGo)
+    }
+    
+    var changeData: (String, String) {
+        return (change ?? "", subtitle ?? "")
+    }
+    
+    private var subtitle: String? {
+        guard let targetWeight = user?.targetWeight else { return nil }
+        return targetWeight.targetType.displayValue
+    }
+    
+    private var change: String? {
+        guard let progress = cachedProgress else { return nil }
+        return decorator.displayValue(for: progress.delta)
+    }
+    
+    var remaining: String? {
+        guard let progress = cachedProgress else { return nil }
+        return decorator.displayValue(for: progress.remaining)
+    }
+    
+    var target: String? {
+        guard let target = user?.targetWeight?.target else { return nil }
+        return decorator.displayValue(for: target)
+    }
+}
+
 class ProgressCell: ResizableViewCell, NibLoadableView {
 
     @IBOutlet weak var background: UIView!
@@ -16,12 +62,11 @@ class ProgressCell: ResizableViewCell, NibLoadableView {
     @IBOutlet weak var targetWeight: UILabel!
     @IBOutlet weak var chart: PieChartView!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         background.layer.cornerRadius = 16
         setupChartView()
-        setChartData()
+        setChart()
     }
     
     private func setupChartView() {
@@ -36,12 +81,7 @@ class ProgressCell: ResizableViewCell, NibLoadableView {
         paragraphStyle.alignment = .center
         paragraphStyle.lineBreakMode = .byTruncatingTail
         
-        let centerText = NSMutableAttributedString(string: "4 lb, 4 oz\nWeightLost")
-        centerText.addAttributes([.font : UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.light),
-                                  .foregroundColor : UIColor.white.withAlphaComponent(0.5)], range: NSRange(location: centerText.length - 10, length: 10))
-        centerText.addAttributes([.font : UIFont.systemFont(ofSize: 20, weight: UIFont.Weight.regular),
-                                  .foregroundColor : UIColor.white], range: NSRange(location: 0, length: centerText.length - 10))
-        chart.centerAttributedText = centerText
+        setCenter()
         
         chart.holeColor = UIColor.clear
         chart.drawHoleEnabled = true
@@ -52,8 +92,8 @@ class ProgressCell: ResizableViewCell, NibLoadableView {
         chart.minOffset = 0
     }
     
-    private func setChartData() {
-        let entries = [PieChartDataEntry(value: 0.5, label: nil), PieChartDataEntry(value: 0.5, label: nil)]
+    private func setChart(data: (Double, Double) = (0, 100)) {
+        let entries = [PieChartDataEntry(value: data.0, label: nil), PieChartDataEntry(value: data.1, label: nil)]
         let dataSet = PieChartDataSet(values: entries, label: "Weight lost")
         dataSet.sliceSpace = 0
         dataSet.drawValuesEnabled = false
@@ -62,6 +102,24 @@ class ProgressCell: ResizableViewCell, NibLoadableView {
         
         let data = PieChartData(dataSet: dataSet)
         chart.data = data
+    }
+    
+    private func setCenter(text: (String, String) = ("", "")) {
+        let centerText = NSMutableAttributedString(string: "\(text.0)\n\(text.1)")
+        let adjustedCenter = centerText.length - text.1.count
+        centerText.addAttributes([.font: UIFont.systemFont(ofSize: 20, weight: UIFont.Weight.regular),
+                                  .foregroundColor: UIColor.white], range: NSRange(location: 0, length: adjustedCenter))
+        centerText.addAttributes([.font: UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.light),
+                                  .foregroundColor: UIColor.white.withAlphaComponent(0.5)], range: NSRange(location: adjustedCenter, length: text.1.count))
+        chart.centerAttributedText = centerText
+    }
+    
+    
+    func update(_ viewModel: ProgressCellViewModel) {
+        weightToLose.text = viewModel.remaining
+        targetWeight.text = viewModel.target
+        setChart(data: viewModel.progress)
+        setCenter(text: viewModel.changeData)
     }
 
 }

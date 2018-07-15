@@ -26,10 +26,13 @@ class DashboardViewModel {
         return realm?.objects(User.self).first
     }
     
-    public var currentWeightCellViewModel: CurrentWeightCellViewModel {
+    private var weightDecorator: WeightDecorator {
         let pref = user?.preference ?? .metric
-        let decorator = WeightDecorator(preference: pref)
-        return CurrentWeightCellViewModel(user: user, decorator: decorator)
+        return WeightDecorator(preference: pref)
+    }
+    
+    public var currentWeightCellViewModel: CurrentWeightCellViewModel {
+        return CurrentWeightCellViewModel(user: user, decorator: weightDecorator)
     }
     
     public var bmiCellViewModel: BMICellViewModel {
@@ -38,5 +41,9 @@ class DashboardViewModel {
     
     public var dailyTargetCellViewModel: DailyTargetCellViewModel {
         return DailyTargetCellViewModel(user: user, calculator: CalorieCalculator())
+    }
+    
+    public var progressCellViewModel: ProgressCellViewModel {
+        return ProgressCellViewModel(user: user, calculator: ProgressCalculator(), decorator: weightDecorator)
     }
 }

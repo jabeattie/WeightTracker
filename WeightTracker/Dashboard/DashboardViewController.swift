@@ -84,6 +84,8 @@ extension DashboardViewController: UICollectionViewDataSource {
             return cell
         case 3:
             let cell: ProgressCell = collectionView.dequeueReusableCell(for: indexPath)
+            let cellVM = viewModel.progressCellViewModel
+            cell.update(cellVM)
             return cell
         default:
             fatalError()
