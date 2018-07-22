@@ -4,5 +4,8 @@ xcode_workspace: WeightTracker.xcworkspace
 xcode_scheme: WeightTrackerTests
 podfile: Podfile
 
+before_install:
+    - pod repo update
+    
 script:
     xcodebuild test -sdk iphonesimulator -workspace WeightTracker.xcworkspace -scheme WeightTracker -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.4' | xcpretty -f `xcpretty-travis-formatter`
