@@ -13,7 +13,7 @@ class CalorieCalculatorTests: QuickSpec {
                 let user = User()
                 user.age = 29
                 user.activityLevel = User.ActivityLevel.moderate
-                user.targetWeight = Weight(figure: 78000)
+                user.targetWeight = TargetWeight(start: Weight(figure: 78000), target: Weight(figure: 78000))
                 user.height = Height(figure: 1780)
                 
                 expect(calculator.calculate(user: user)).to(beCloseTo(2278.25))
@@ -26,7 +26,7 @@ class CalorieCalculatorTests: QuickSpec {
                 user.age = 29
                 user.sex = .female
                 user.activityLevel = User.ActivityLevel.moderate
-                user.targetWeight = Weight(figure: 78000)
+                user.targetWeight = TargetWeight(start: Weight(figure: 78000), target: Weight(figure: 78000))
                 user.height = Height(figure: 1780)
                 
                 expect(calculator.calculate(user: user)).to(beCloseTo(2062.45))
