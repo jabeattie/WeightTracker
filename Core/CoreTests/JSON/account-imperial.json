@@ -1,0 +1,35 @@
+{
+    "id": 13,
+    "gender": "FEMALE",
+    "dob": "2020-01-01",
+    "heightUnit": "FEET",
+    "weightUnit": "STONE",
+    "physicalActivityProfile": "LIGHT",
+    "height": 176,
+    "weights": [
+        {
+            "id": 15,
+            "weight": 75025,
+            "creationTimestamp": "2020-06-10T15:26:24.301483",
+            "updateTimestamp": "2020-06-10T15:26:24.302225"
+        },
+        {
+            "id": 23,
+            "weight": 70100,
+            "creationTimestamp": "2020-06-10T22:35:32.109552",
+            "updateTimestamp": "2020-06-10T22:35:32.109589"
+        }
+    ],
+    "targetWeights": [
+        {
+            "id": 22,
+            "weight": 64000,
+            "deadline": "2020-07-30",
+            "type": "LOSS",
+            "creationTimestamp": "2020-06-10T22:35:24.563464",
+            "updateTimestamp": "2020-06-10T22:35:24.563488"
+        }
+    ],
+    "creationTimestamp": "2020-06-10T14:29:40.559409",
+    "updateTimestamp": "2020-06-10T14:29:40.560377"
+}

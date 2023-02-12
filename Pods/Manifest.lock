@@ -1,0 +1,36 @@
+PODS:
+  - Auth0 (1.25.0):
+    - JWTDecode
+    - SimpleKeychain
+  - JWTDecode (2.4.1)
+  - Nimble (8.1.0)
+  - Quick (2.2.0)
+  - SimpleKeychain (0.11.1)
+  - SwiftGen (6.1.0)
+
+DEPENDENCIES:
+  - Auth0 (~> 1.0)
+  - Nimble
+  - Quick
+  - SwiftGen (~> 6.0)
+
+SPEC REPOS:
+  trunk:
+    - Auth0
+    - JWTDecode
+    - Nimble
+    - Quick
+    - SimpleKeychain
+    - SwiftGen
+
+SPEC CHECKSUMS:
+  Auth0: 358dbd972851942cf4a5e5ce8cd14bcd3ad969fa
+  JWTDecode: 4bd4da0cdf0f8154fd467fa48499f34ec057fb88
+  Nimble: dc2fe319733797b05d453f19f5508ca6bcd88f04
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  SimpleKeychain: 0c657949c7afff92337d2ff64052d5eb5c53823e
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+
+PODFILE CHECKSUM: dd3b11fdc9c157f1de7428381a59c06874b5ef74
+
+COCOAPODS: 1.9.1

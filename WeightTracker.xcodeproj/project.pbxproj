@@ -3,18 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A38FB6D248D2FDE00F4CDE8 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A38FB6C248D2FDE00F4CDE8 /* Request.swift */; };
+		4A38FB6F248D3CA300F4CDE8 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A38FB6E248D3CA300F4CDE8 /* APIManager.swift */; };
+		4A38FB73248D41FC00F4CDE8 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A38FB72248D41FC00F4CDE8 /* SignupViewController.swift */; };
+		4A38FB75248D420800F4CDE8 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A38FB74248D420800F4CDE8 /* SignupViewModel.swift */; };
+		4A38FB77248D42AB00F4CDE8 /* SignupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A38FB76248D42AB00F4CDE8 /* SignupRequest.swift */; };
+		4A52FB94248D697F003DD213 /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A52FB93248D697F003DD213 /* API.framework */; };
+		4A52FB95248D697F003DD213 /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A52FB93248D697F003DD213 /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A52FB99248D6ADD003DD213 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A52FB98248D6ADD003DD213 /* Encodable+Extensions.swift */; };
+		4A52FB9B248D8427003DD213 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A52FB9A248D8427003DD213 /* SignUpView.swift */; };
 		4AD4E58E24899D860012EBEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD4E58D24899D860012EBEF /* AppDelegate.swift */; };
 		4AD4E59024899D860012EBEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD4E58F24899D860012EBEF /* SceneDelegate.swift */; };
 		4AD4E59224899D860012EBEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD4E59124899D860012EBEF /* ViewController.swift */; };
-		4AD4E59524899D860012EBEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD4E59324899D860012EBEF /* Main.storyboard */; };
 		4AD4E59724899D880012EBEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD4E59624899D880012EBEF /* Assets.xcassets */; };
 		4AD4E59A24899D880012EBEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD4E59824899D880012EBEF /* LaunchScreen.storyboard */; };
 		4AD4E5A524899D890012EBEF /* WeightTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD4E5A424899D890012EBEF /* WeightTrackerTests.swift */; };
 		4AD4E5B024899D890012EBEF /* WeightTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD4E5AF24899D890012EBEF /* WeightTrackerUITests.swift */; };
+		4AD4E5BF24899E500012EBEF /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AD4E5BE24899E500012EBEF /* Auth0.plist */; };
+		4AD4E5C1248A32080012EBEF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD4E5C0248A32080012EBEF /* ViewModel.swift */; };
+		4AE826B024961D1100BF2C7E /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE826AF24961D1100BF2C7E /* OnboardingCoordinator.swift */; };
+		4AE826B224961DD800BF2C7E /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE826B124961DD800BF2C7E /* OnboardingPageViewController.swift */; };
+		4AE826B42496204200BF2C7E /* OnboardingPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE826B32496204200BF2C7E /* OnboardingPageViewModel.swift */; };
+		4AE826B62496220800BF2C7E /* WeightEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE826B52496220800BF2C7E /* WeightEntryViewController.swift */; };
+		4AE826BD249629CE00BF2C7E /* WeightEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE826BC249629CE00BF2C7E /* WeightEntryView.swift */; };
+		4AE826EE24962E0D00BF2C7E /* WeightUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE826ED24962E0D00BF2C7E /* WeightUI.framework */; };
+		4AE826EF24962E0D00BF2C7E /* WeightUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE826ED24962E0D00BF2C7E /* WeightUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4AE827112496367800BF2C7E /* UIAppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE827102496367800BF2C7E /* UIAppService.swift */; };
+		4AE82713249636E900BF2C7E /* ApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE82712249636E900BF2C7E /* ApplicationService.swift */; };
+		4AE827322496425B00BF2C7E /* HeightEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE827312496425B00BF2C7E /* HeightEntryView.swift */; };
+		4AE827342496431200BF2C7E /* BMIEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE827332496431200BF2C7E /* BMIEntryView.swift */; };
+		4AE827362496441000BF2C7E /* BMREntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE827352496441000BF2C7E /* BMREntryView.swift */; };
+		4AE827822496666E00BF2C7E /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE827812496666E00BF2C7E /* Core.framework */; };
+		4AE827832496666E00BF2C7E /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE827812496666E00BF2C7E /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8179A7AF2DF1123E5162110F /* Pods_WeightTracker_WeightTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FBD9D14C8A87A9EBD8DC50 /* Pods_WeightTracker_WeightTrackerUITests.framework */; };
+		A4E2C8108983C2BACA020ADD /* Pods_WeightTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9112749C81C446DEC6B2105A /* Pods_WeightTrackerTests.framework */; };
+		DAF753B0264F5BBF6A1DD4C9 /* Pods_WeightTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3501FDD0534A78E7F4EA20 /* Pods_WeightTracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +61,38 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4A52FB96248D697F003DD213 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4AE826EF24962E0D00BF2C7E /* WeightUI.framework in Embed Frameworks */,
+				4AE827832496666E00BF2C7E /* Core.framework in Embed Frameworks */,
+				4A52FB95248D697F003DD213 /* API.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1490DAE733257FE2B75C9DF5 /* Pods-WeightTracker-WeightTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightTracker-WeightTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-WeightTracker-WeightTrackerUITests/Pods-WeightTracker-WeightTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2657207B4B65953D0C8F2354 /* Pods-WeightTracker-WeightTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightTracker-WeightTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-WeightTracker-WeightTrackerUITests/Pods-WeightTracker-WeightTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C9CCAEF39373E64386834ED /* Pods-WeightTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-WeightTrackerTests/Pods-WeightTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A38FB6C248D2FDE00F4CDE8 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		4A38FB6E248D3CA300F4CDE8 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		4A38FB72248D41FC00F4CDE8 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		4A38FB74248D420800F4CDE8 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		4A38FB76248D42AB00F4CDE8 /* SignupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequest.swift; sourceTree = "<group>"; };
+		4A52FB93248D697F003DD213 /* API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A52FB98248D6ADD003DD213 /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
+		4A52FB9A248D8427003DD213 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		4AD4E58A24899D860012EBEF /* WeightTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD4E58D24899D860012EBEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AD4E58F24899D860012EBEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4AD4E59124899D860012EBEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4AD4E59424899D860012EBEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4AD4E59624899D880012EBEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AD4E59924899D880012EBEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AD4E59B24899D880012EBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +102,26 @@
 		4AD4E5AB24899D890012EBEF /* WeightTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeightTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD4E5AF24899D890012EBEF /* WeightTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTrackerUITests.swift; sourceTree = "<group>"; };
 		4AD4E5B124899D890012EBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD4E5BE24899E500012EBEF /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		4AD4E5C0248A32080012EBEF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4AE826AF24961D1100BF2C7E /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		4AE826B124961DD800BF2C7E /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		4AE826B32496204200BF2C7E /* OnboardingPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewModel.swift; sourceTree = "<group>"; };
+		4AE826B52496220800BF2C7E /* WeightEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightEntryViewController.swift; sourceTree = "<group>"; };
+		4AE826BC249629CE00BF2C7E /* WeightEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightEntryView.swift; sourceTree = "<group>"; };
+		4AE826ED24962E0D00BF2C7E /* WeightUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WeightUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE827102496367800BF2C7E /* UIAppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAppService.swift; sourceTree = "<group>"; };
+		4AE82712249636E900BF2C7E /* ApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationService.swift; sourceTree = "<group>"; };
+		4AE827312496425B00BF2C7E /* HeightEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightEntryView.swift; sourceTree = "<group>"; };
+		4AE827332496431200BF2C7E /* BMIEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIEntryView.swift; sourceTree = "<group>"; };
+		4AE827352496441000BF2C7E /* BMREntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMREntryView.swift; sourceTree = "<group>"; };
+		4AE827812496666E00BF2C7E /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C15E034B81CEAB62A14396F /* Pods-WeightTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightTracker.debug.xcconfig"; path = "Target Support Files/Pods-WeightTracker/Pods-WeightTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		4C3501FDD0534A78E7F4EA20 /* Pods_WeightTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeightTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9112749C81C446DEC6B2105A /* Pods_WeightTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeightTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		916229B0CA77ABF9B3823726 /* Pods-WeightTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightTracker.release.xcconfig"; path = "Target Support Files/Pods-WeightTracker/Pods-WeightTracker.release.xcconfig"; sourceTree = "<group>"; };
+		B7FBD9D14C8A87A9EBD8DC50 /* Pods_WeightTracker_WeightTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeightTracker_WeightTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFBA63F6FE9582A45542C282 /* Pods-WeightTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-WeightTrackerTests/Pods-WeightTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +129,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF753B0264F5BBF6A1DD4C9 /* Pods_WeightTracker.framework in Frameworks */,
+				4AE826EE24962E0D00BF2C7E /* WeightUI.framework in Frameworks */,
+				4A52FB94248D697F003DD213 /* API.framework in Frameworks */,
+				4AE827822496666E00BF2C7E /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E2C8108983C2BACA020ADD /* Pods_WeightTrackerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +148,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8179A7AF2DF1123E5162110F /* Pods_WeightTracker_WeightTrackerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A38FB6B248D2FCD00F4CDE8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4A38FB6C248D2FDE00F4CDE8 /* Request.swift */,
+				4A38FB6E248D3CA300F4CDE8 /* APIManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4A38FB71248D41F000F4CDE8 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				4A38FB72248D41FC00F4CDE8 /* SignupViewController.swift */,
+				4A38FB74248D420800F4CDE8 /* SignupViewModel.swift */,
+				4A38FB76248D42AB00F4CDE8 /* SignupRequest.swift */,
+				4A52FB9A248D8427003DD213 /* SignUpView.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		4A52FB97248D6ACF003DD213 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4A52FB98248D6ADD003DD213 /* Encodable+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4AD4E58124899D860012EBEF = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +190,8 @@
 				4AD4E5A324899D890012EBEF /* WeightTrackerTests */,
 				4AD4E5AE24899D890012EBEF /* WeightTrackerUITests */,
 				4AD4E58B24899D860012EBEF /* Products */,
+				526BA4F0AB37B32485CCD9AA /* Pods */,
+				7CF0DA2E04075EF8C21CA7FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +208,16 @@
 		4AD4E58C24899D860012EBEF /* WeightTracker */ = {
 			isa = PBXGroup;
 			children = (
-				4AD4E58D24899D860012EBEF /* AppDelegate.swift */,
+				4AE8270F2496366700BF2C7E /* AppDelegate */,
+				4AE826AE24961CFD00BF2C7E /* Onboarding */,
+				4A52FB97248D6ACF003DD213 /* Extensions */,
+				4A38FB71248D41F000F4CDE8 /* Signup */,
+				4A38FB6B248D2FCD00F4CDE8 /* API */,
+				4AD4E5BD24899E3B0012EBEF /* Resources */,
 				4AD4E58F24899D860012EBEF /* SceneDelegate.swift */,
+				4AD4E5C0248A32080012EBEF /* ViewModel.swift */,
 				4AD4E59124899D860012EBEF /* ViewController.swift */,
-				4AD4E59324899D860012EBEF /* Main.storyboard */,
-				4AD4E59624899D880012EBEF /* Assets.xcassets */,
 				4AD4E59824899D880012EBEF /* LaunchScreen.storyboard */,
-				4AD4E59B24899D880012EBEF /* Info.plist */,
 			);
 			path = WeightTracker;
 			sourceTree = "<group>";
@@ -128,6 +240,75 @@
 			path = WeightTrackerUITests;
 			sourceTree = "<group>";
 		};
+		4AD4E5BD24899E3B0012EBEF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4AD4E59624899D880012EBEF /* Assets.xcassets */,
+				4AD4E59B24899D880012EBEF /* Info.plist */,
+				4AD4E5BE24899E500012EBEF /* Auth0.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4AE826AE24961CFD00BF2C7E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				4AE826BB249629BE00BF2C7E /* Views */,
+				4AE826AF24961D1100BF2C7E /* OnboardingCoordinator.swift */,
+				4AE826B124961DD800BF2C7E /* OnboardingPageViewController.swift */,
+				4AE826B32496204200BF2C7E /* OnboardingPageViewModel.swift */,
+				4AE826B52496220800BF2C7E /* WeightEntryViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		4AE826BB249629BE00BF2C7E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4AE826BC249629CE00BF2C7E /* WeightEntryView.swift */,
+				4AE827312496425B00BF2C7E /* HeightEntryView.swift */,
+				4AE827332496431200BF2C7E /* BMIEntryView.swift */,
+				4AE827352496441000BF2C7E /* BMREntryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4AE8270F2496366700BF2C7E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4AD4E58D24899D860012EBEF /* AppDelegate.swift */,
+				4AE827102496367800BF2C7E /* UIAppService.swift */,
+				4AE82712249636E900BF2C7E /* ApplicationService.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		526BA4F0AB37B32485CCD9AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C15E034B81CEAB62A14396F /* Pods-WeightTracker.debug.xcconfig */,
+				916229B0CA77ABF9B3823726 /* Pods-WeightTracker.release.xcconfig */,
+				2657207B4B65953D0C8F2354 /* Pods-WeightTracker-WeightTrackerUITests.debug.xcconfig */,
+				1490DAE733257FE2B75C9DF5 /* Pods-WeightTracker-WeightTrackerUITests.release.xcconfig */,
+				3C9CCAEF39373E64386834ED /* Pods-WeightTrackerTests.debug.xcconfig */,
+				FFBA63F6FE9582A45542C282 /* Pods-WeightTrackerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7CF0DA2E04075EF8C21CA7FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AE827812496666E00BF2C7E /* Core.framework */,
+				4AE826ED24962E0D00BF2C7E /* WeightUI.framework */,
+				4A52FB93248D697F003DD213 /* API.framework */,
+				4C3501FDD0534A78E7F4EA20 /* Pods_WeightTracker.framework */,
+				B7FBD9D14C8A87A9EBD8DC50 /* Pods_WeightTracker_WeightTrackerUITests.framework */,
+				9112749C81C446DEC6B2105A /* Pods_WeightTrackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +316,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AD4E5B424899D890012EBEF /* Build configuration list for PBXNativeTarget "WeightTracker" */;
 			buildPhases = (
+				B4EC3AD8A203F58AD59D4952 /* [CP] Check Pods Manifest.lock */,
 				4AD4E58624899D860012EBEF /* Sources */,
 				4AD4E58724899D860012EBEF /* Frameworks */,
 				4AD4E58824899D860012EBEF /* Resources */,
+				571FC4082F86A449DE71D877 /* [CP] Embed Pods Frameworks */,
+				4A52FB96248D697F003DD213 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +336,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AD4E5B724899D890012EBEF /* Build configuration list for PBXNativeTarget "WeightTrackerTests" */;
 			buildPhases = (
+				2F4635F42F40BFA8A0FAE85E /* [CP] Check Pods Manifest.lock */,
 				4AD4E59C24899D890012EBEF /* Sources */,
 				4AD4E59D24899D890012EBEF /* Frameworks */,
 				4AD4E59E24899D890012EBEF /* Resources */,
@@ -170,9 +355,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AD4E5BA24899D890012EBEF /* Build configuration list for PBXNativeTarget "WeightTrackerUITests" */;
 			buildPhases = (
+				712B014252FAAF8909FE6A46 /* [CP] Check Pods Manifest.lock */,
 				4AD4E5A724899D890012EBEF /* Sources */,
 				4AD4E5A824899D890012EBEF /* Frameworks */,
 				4AD4E5A924899D890012EBEF /* Resources */,
+				EDED8EAE813956AF4FA20823 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,7 +421,7 @@
 			files = (
 				4AD4E59A24899D880012EBEF /* LaunchScreen.storyboard in Resources */,
 				4AD4E59724899D880012EBEF /* Assets.xcassets in Resources */,
-				4AD4E59524899D860012EBEF /* Main.storyboard in Resources */,
+				4AD4E5BF24899E500012EBEF /* Auth0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +441,134 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F4635F42F40BFA8A0FAE85E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeightTrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		571FC4082F86A449DE71D877 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeightTracker/Pods-WeightTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeightTracker/Pods-WeightTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeightTracker/Pods-WeightTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		712B014252FAAF8909FE6A46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeightTracker-WeightTrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4EC3AD8A203F58AD59D4952 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeightTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDED8EAE813956AF4FA20823 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeightTracker-WeightTrackerUITests/Pods-WeightTracker-WeightTrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeightTracker-WeightTrackerUITests/Pods-WeightTracker-WeightTrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeightTracker-WeightTrackerUITests/Pods-WeightTracker-WeightTrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4AD4E58624899D860012EBEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE827342496431200BF2C7E /* BMIEntryView.swift in Sources */,
+				4A38FB6F248D3CA300F4CDE8 /* APIManager.swift in Sources */,
+				4A38FB73248D41FC00F4CDE8 /* SignupViewController.swift in Sources */,
+				4A38FB75248D420800F4CDE8 /* SignupViewModel.swift in Sources */,
+				4AE826B024961D1100BF2C7E /* OnboardingCoordinator.swift in Sources */,
+				4AE826B42496204200BF2C7E /* OnboardingPageViewModel.swift in Sources */,
+				4A38FB77248D42AB00F4CDE8 /* SignupRequest.swift in Sources */,
+				4A52FB9B248D8427003DD213 /* SignUpView.swift in Sources */,
+				4AE826BD249629CE00BF2C7E /* WeightEntryView.swift in Sources */,
+				4AE826B62496220800BF2C7E /* WeightEntryViewController.swift in Sources */,
+				4AE826B224961DD800BF2C7E /* OnboardingPageViewController.swift in Sources */,
+				4AE827322496425B00BF2C7E /* HeightEntryView.swift in Sources */,
 				4AD4E59224899D860012EBEF /* ViewController.swift in Sources */,
+				4AE827112496367800BF2C7E /* UIAppService.swift in Sources */,
 				4AD4E58E24899D860012EBEF /* AppDelegate.swift in Sources */,
+				4A52FB99248D6ADD003DD213 /* Encodable+Extensions.swift in Sources */,
+				4A38FB6D248D2FDE00F4CDE8 /* Request.swift in Sources */,
+				4AE827362496441000BF2C7E /* BMREntryView.swift in Sources */,
+				4AE82713249636E900BF2C7E /* ApplicationService.swift in Sources */,
+				4AD4E5C1248A32080012EBEF /* ViewModel.swift in Sources */,
 				4AD4E59024899D860012EBEF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +605,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4AD4E59324899D860012EBEF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4AD4E59424899D860012EBEF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4AD4E59824899D880012EBEF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,11 +732,12 @@
 		};
 		4AD4E5B524899D890012EBEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C15E034B81CEAB62A14396F /* Pods-WeightTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NQT69ADSBZ;
-				INFOPLIST_FILE = WeightTracker/Info.plist;
+				INFOPLIST_FILE = WeightTracker/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +751,12 @@
 		};
 		4AD4E5B624899D890012EBEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916229B0CA77ABF9B3823726 /* Pods-WeightTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NQT69ADSBZ;
-				INFOPLIST_FILE = WeightTracker/Info.plist;
+				INFOPLIST_FILE = WeightTracker/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +770,7 @@
 		};
 		4AD4E5B824899D890012EBEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C9CCAEF39373E64386834ED /* Pods-WeightTrackerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +793,7 @@
 		};
 		4AD4E5B924899D890012EBEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFBA63F6FE9582A45542C282 /* Pods-WeightTrackerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +816,7 @@
 		};
 		4AD4E5BB24899D890012EBEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2657207B4B65953D0C8F2354 /* Pods-WeightTracker-WeightTrackerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +837,7 @@
 		};
 		4AD4E5BC24899D890012EBEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1490DAE733257FE2B75C9DF5 /* Pods-WeightTracker-WeightTrackerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

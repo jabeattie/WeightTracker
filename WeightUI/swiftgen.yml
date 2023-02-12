@@ -1,0 +1,17 @@
+xcassets:
+  inputs:
+    - WeightUI/Resources/Colours.xcassets
+    - WeightUI/Resources/Icons.xcassets
+  outputs:
+    templateName: swift4
+    output: WeightUI/Assets.swift
+    params:
+      publicAccess: true
+fonts:
+  inputs: WeightUI/Resources/Fonts
+  outputs:
+    templatePath: Templates/swift4.stencil
+    output: WeightUI/Fonts.swift
+    params:
+      preservePath: true
+      publicAccess: true
